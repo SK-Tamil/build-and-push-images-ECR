@@ -6,9 +6,9 @@ app = Flask(__name__)
 def home():
     return send_from_directory('.', 'index.html')
 
-@app.route('/image/<path:filename>')
+@app.route('/images/<path:filename>')
 def images(filename):
-    return send_from_directory('image', filename)
+    return send_from_directory('images', filename)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
