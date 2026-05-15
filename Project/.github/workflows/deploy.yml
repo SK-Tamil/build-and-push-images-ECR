@@ -52,6 +52,6 @@ jobs:
 
       - name: Image Details
         run: |
-          echo "Docker image pushed successfully"
+          echo "Docker image pushed successfully"  
           echo "Repository: $ECR_REPOSITORY"
           echo "Tag: $IMAGE_TAG"
